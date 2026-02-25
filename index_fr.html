@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le restaurant La Ioana | Cuisine traditionnelle roumaine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navigation">
+        <ul class="sidebar">
+            <a href="#" class="links" onclick=hideSideBar()>
+                <li class="button underline-button" ><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+            </a><a href="menu.html" class="links">
+                <li class="button underline-button">Menu</li>
+            </a><a href="info.html/#contact" class="links">
+                <li class="button underline-button">Contact</li>
+            </a><a href="livraison.html" class="links">
+                <li class="button underline-button">Livraison</li>
+            </a><a href="tel:+33753411035" class="links special-button">
+                <li class=" underline-button">Réserver</li>
+            </a>
+        </ul>
+        <ul class="the-bar">
+            <a href="#" class="links">
+                <li class="button underline-button logo">La Ioana</li>
+            </a><a href="menu.html" class="links hide-me">
+                <li class="button underline-button">Menu</li>
+            </a><a href="info.html/#contact" class="links hide-me">
+                <li class="button underline-button">Contact</li>
+            </a><a href="livraison.html" class="links hide-me">
+                <li class="button underline-button">Livraison</li>
+            </a><a href="tel:+33753411035" class="links hide-me special-button">
+                <li class="">Réserver</li>
+            </a>
+            <a href="#" onclick=showSideBar() class="menu-button hide-me">
+                <li ><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+            </a>
+        </ul>
+    </nav>
+    <div class="hero">
+        <br><br><br>
+        <div class="food-introduction">
+    </div>
+    </div>
+    <div class="title">
+        <p>LA MEILLEURE CUISINE TRADITIONNELLE ROUMAINE</p>
+    </div>
+
+    <script>
+        function showSideBar() {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = "flex";
+        }
+
+        function hideSideBar() {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = "none";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+@font-face {
+    font-family: "Handwritten";
+    src: url(fonts/Handwritten.otf);
+}
+@font-face {
+    font-family: "Lora";
+    src: url(fonts/lora.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    font-family: Handwritten;
+}
+
+body {
+    background-color: #FBF0DA;
+    min-height: 200vh;
+    font-family: Lora;
+
+nav {
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    
+    background-color: #b7cea673;
+}
+nav ul{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    height: 50px;
+    transition: 0.3s;
+}
+
+nav a:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top:0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.144);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-shadow: 5px 3px 39px -2px rgba(0,0,0,0.85);
+    
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+.menu-button {
+    display: none;
+}
+
+.the-bar {
+    position: fixed;
+    top: 0;
+    background-color: #b7cea683;
+    backdrop-filter: blur(10px);
+}
+
+
+.underline-button {
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  letter-spacing: 2px;
+  position:relative;
+  overflow:hidden;
+}
+
+.underline-button:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  background : #000000;
+  left: 45%;
+  height: 2px;
+  bottom: 0;
+  transition: all .3s;
+  opacity: 0.7;
+}
+
+.underline-button:hover:before {
+  width: 100%;
+  left:0;
+}
+
+.special-button {
+    background-color: #CEBF69;
+}
+
+.special-button:hover {
+    background-color: #e68f2d;
+}
+
+.hero {
+    background-color: #E3BE8F;
+    display: flex;
+    justify-content: center;
+    border-radius: 9px;
+}
+
+.food-introduction {
+    background-image: url(icons/sarmale.webp);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 97%;;
+    height: 75vh;
+    margin: 1.5%;
+    border-radius: 9px;
+}
+
+.title {
+    font-size: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title .p {
+    width: 30%;
+}
+
+@media (max-width: 675px) {
+     .hide-me {
+        display: none;
+        width: 0px;
+    }
+    .menu-button {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .sidebar {
+        width: 100%;
+    }
+}

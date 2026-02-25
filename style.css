@@ -24,6 +24,7 @@
 body {
     background-color: #FBF0DA;
     font-family: Lora;
+    width: 100%;
 }
 nav {
     background-color: white;
@@ -69,6 +70,7 @@ nav a:first-child {
     align-items: flex-start;
     justify-content: flex-start;
     box-shadow: 5px 3px 39px -2px rgba(0,0,0,0.85);
+    padding: auto;
     
 }
 
@@ -90,6 +92,8 @@ nav a:first-child {
     background-color: #b7cea683;
     backdrop-filter: blur(10px);
     border-bottom: 2px solid black;
+    width:100%;
+    z-index: 999;
 }
 
 
@@ -225,6 +229,52 @@ nav a:first-child {
 
 .buttons > .button > a:hover{
     color: rgba(0, 0, 0, 0.512);
+}
+
+.review-section {
+    background-color: #E3BE8F;
+    padding: 5%;
+}
+
+.end-section {
+    color: white;
+    background-color: #425931;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem;
+    max-width: 100%;
+}
+.end-section a{
+    text-decoration: none;
+    color: white;
+}
+
+.left {
+    display: grid;
+    gap: 1rem;
+    width: 200px;
+    font-family: Lora;
+    margin:0.25rem;
+}
+
+.left a {
+    font-weight:900;
+}
+
+.right {
+    font-family: Handwritten;
+}
+
+/* Forțăm containerul Elfsight să nu depășească lățimea ecranului */
+.elfsight-app-0f128f4d-1a11-41a9-ae11-57b0aec1b19f {
+    max-width: 100vw !important;
+    overflow: hidden !important;
+    display: block !important;
+}
+
+/* De multe ori, widget-ul creează un div intern foarte lat pentru animații */
+.elfsight-app-0f128f4d-1a11-41a9-ae11-57b0aec1b19f > div {
+    max-width: 100% !important;
 }
 
 @media (max-width: 675px) {

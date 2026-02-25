@@ -310,4 +310,9 @@ nav a:first-child {
     .buttons {
         width: 90%;
     }
+    .end-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
 }

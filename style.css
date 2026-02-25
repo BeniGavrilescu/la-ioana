@@ -7,6 +7,11 @@
     src: url(fonts/lora.ttf);
 }
 
+@font-face {
+    font-family: "IrishGlove";
+    src: url(fonts/IrishGrover-Regular.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -18,9 +23,8 @@
 
 body {
     background-color: #FBF0DA;
-    min-height: 200vh;
     font-family: Lora;
-
+}
 nav {
     background-color: white;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
@@ -85,6 +89,7 @@ nav a:first-child {
     top: 0;
     background-color: #b7cea683;
     backdrop-filter: blur(10px);
+    border-bottom: 2px solid black;
 }
 
 
@@ -127,10 +132,14 @@ nav a:first-child {
     display: flex;
     justify-content: center;
     border-radius: 9px;
+    box-shadow: 4px 7px 27px 1px rgba(0,0,0,0.48);
 }
 
 .food-introduction {
-    background-image: url(icons/sarmale.webp);
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+        url(icons/sarmale.webp);
+
     background-repeat:no-repeat;
     background-position: center;
     background-size: cover;
@@ -138,6 +147,12 @@ nav a:first-child {
     height: 75vh;
     margin: 1.5%;
     border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10%;
+    box-shadow: 4px 7px 27px 1px rgba(0,0,0,0.48);
 }
 
 .title {
@@ -152,6 +167,66 @@ nav a:first-child {
     width: 30%;
 }
 
+
+.presentation {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 5%;
+    background-color: #E3BE8F;
+    padding: 2.5%;
+    justify-content: center;
+    align-content: center;
+    border-radius: 9px;
+    gap: 2em;
+    font-size: 1.25rem;
+    box-shadow: 4px 7px 27px 1px rgba(0,0,0,0.48);
+}
+
+.presentation > .image {
+    background-image: url(icons/entree.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius:9px;
+    transition: 0.3s;
+}
+
+.presentation >.image:hover {
+    box-shadow: 4px 7px 27px 1px rgba(0, 0, 0, 0.199);
+    cursor: pointer;
+}
+
+.buttons {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 5%;
+    width: 60%;
+}
+
+.buttons > .button {
+    
+    padding: 0.5rem;
+    /* border-bottom: 2px solid black;
+    border-top: 2px solid black; */
+    padding-left: 2.5%;
+    
+}
+
+.buttons > .button > a {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    font-family: IrishGlove;
+}
+
+.buttons > .button > a:hover{
+    color: rgba(0, 0, 0, 0.512);
+}
+
 @media (max-width: 675px) {
      .hide-me {
         display: none;
@@ -161,10 +236,28 @@ nav a:first-child {
         display: flex;
         align-items: center;
     }
+    .title {
+        font-size: 2.5rem;
+    }
+    .presentation {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 }
 
 @media (max-width: 425px) {
     .sidebar {
         width: 100%;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .presentation {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+    }
+
+    .buttons {
+        width: 90%;
     }
 }

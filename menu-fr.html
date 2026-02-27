@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant La Ioana | Cuisine traditionnelle roumaine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navigation">
+        <ul class="sidebar">
+            <a href="#" class="links" onclick="hideSideBar()">
+                <li class="button underline-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#1f1f1f">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg>
+                </li>
+            </a>
+            <a href="menu-fr.html" class="links">
+                <li class="button underline-button">Menu</li>
+            </a>
+            <a href="info-fr.html/#contact" class="links">
+                <li class="button underline-button">Contact</li>
+            </a>
+            <a href="livraison-fr.html" class="links">
+                <li class="button underline-button">Livraison</li>
+            </a>
+            <a href="tel:+33753411035" class="links special-button">
+                <li class="underline-button">Réservations</li>
+            </a>
+        </ul>
+
+        <ul class="the-bar">
+            <a href="index-fr.html" class="links">
+                <li class="button underline-button logo">La Ioana</li>
+            </a>
+
+            <div class="language links">
+                <div class="buttonn">
+                    <svg class="flags" width="1rem" height="1rem" viewBox="0 0 36 36"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#ED2939" d="M36 27a4 4 0 0 1-4 4h-8V5h8a4 4 0 0 1 4 4v18z"></path>
+                        <path fill="#002495" d="M4 5a4 4 0 0 0-4 4v18a4 4 0 0 0 4 4h8V5H4z"></path>
+                        <path fill="#EEE" d="M12 5h12v26H12z"></path>
+                    </svg> &nbsp; Français
+                </div>
+                <div class="the-buttonss">
+                    <a href="index-ro.html" class="language-button">
+                        <div class="buttonss">
+                            <svg class="flags" width="1rem" height="1rem" viewBox="0 0 36 36"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#002B7F" d="M4 5a4 4 0 0 0-4 4v18a4 4 0 0 0 4 4h8V5H4z"></path>
+                                <path fill="#FCD116" d="M12 5h12v26H12z"></path>
+                                <path fill="#CE1126" d="M32 5h-8v26h8a4 4 0 0 0 4-4V9a4 4 0 0 0-4-4z"></path>
+                            </svg> &nbsp; Română
+                        </div>
+                    </a>
+                    <a href="index-en.html" class="language-button">
+                        <div class="buttonss">
+                            <svg class="flags" width="1rem" height="1rem" viewBox="0 0 36 36"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#00247D"
+                                    d="M0 9.059V13h5.628zM4.664 31H13v-5.837zM23 25.164V31h8.335zM0 23v3.941L5.63 23zM31.337 5H23v5.837zM36 26.942V23h-5.631zM36 13V9.059L30.371 13zM13 5H4.664L13 10.837z">
+                                </path>
+                                <path fill="#CF1B2B"
+                                    d="M25.14 23l9.712 6.801a3.977 3.977 0 0 0 .99-1.749L28.627 23H25.14zM13 23h-2.141l-9.711 6.8c.521.53 1.189.909 1.938 1.085L13 23.943V23zm10-10h2.141l9.711-6.8a3.988 3.988 0 0 0-1.937-1.085L23 12.057V13zm-12.141 0L1.148 6.2a3.994 3.994 0 0 0-.991 1.749L7.372 13h3.487z">
+                                </path>
+                                <path fill="#EEE"
+                                    d="M36 21H21v10h2v-5.836L31.335 31H32a3.99 3.99 0 0 0 2.852-1.199L25.14 23h3.487l7.215 5.052c.093-.337.158-.686.158-1.052v-.058L30.369 23H36v-2zM0 21v2h5.63L0 26.941V27c0 1.091.439 2.078 1.148 2.8l9.711-6.8H13v.943l-9.914 6.941c.294.07.598.116.914.116h.664L13 25.163V31h2V21H0zM36 9a3.983 3.983 0 0 0-1.148-2.8L25.141 13H23v-.943l9.915-6.942A4.001 4.001 0 0 0 32 5h-.663L23 10.837V5h-2v10h15v-2h-5.629L36 9.059V9zM13 5v5.837L4.664 5H4a3.985 3.985 0 0 0-2.852 1.2l9.711 6.8H7.372L.157 7.949A3.968 3.968 0 0 0 0 9v.059L5.628 13H0v2h15V5h-2z">
+                                </path>
+                                <path fill="#CF1B2B" d="M21 15V5h-6v10H0v6h15v10h6V21h15v-6z"></path>
+                            </svg> &nbsp; Anglais
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <a href="menu-fr.html" class="links hide-me">
+                <li class="button underline-button">Menu</li>
+            </a>
+            <a href="info-fr.html/#contact" class="links hide-me">
+                <li class="button underline-button">Contact</li>
+            </a>
+            <a href="livraison-fr.html" class="links hide-me">
+                <li class="button underline-button">Livraison</li>
+            </a>
+            <a href="tel:+33753411035" class="links hide-me special-button">
+                <li class="">Réservations</li>
+            </a>
+
+            <a href="#" onclick="showSideBar()" class="menu-button hide-me">
+                <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#1f1f1f">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></li>
+            </a>
+        </ul>
+    </nav>
+
+    <div class="title" style="margin-top: 20vh; margin-bottom: 20vh;">LE MENU</div>
+
+    <div class="meniu">
+        <div class="fel">
+            <div class="undertitle">Entrées</div>
+            <div class="optiuni">
+                <div class="optiune">
+                    <div class="text">
+                        <div class="titlu">Œufs mayonnaise</div>
+                        <div class="descriere">Œufs, mayonnaise</div>
+                    </div>
+                    <div class="pret">7,5 €</div>
+                </div>
+                <div class="optiune">
+                    <div class="text">
+                        <div class="titlu">Salade d'aubergines</div>
+                        <div class="descriere">Aubergines, oignons, mayonnaise</div>
+                    </div>
+                    <div class="pret">7,5 €</div>
+                </div>
+                <div class="optiune">
+                    <div class="text">
+                        <div class="titlu">Tomates mozzarella</div>
+                        <div class="descriere">Tomates, mozzarella</div>
+                    </div>
+                    <div class="pret">7,5 €</div>
+                </div>
+                <div class="optiune">
+                    <div class="text">
+                        <div class="titlu">Avocat aux crevettes</div>
+                        <div class="descriere">Avocat, crevettes, tomates, mayonnaise</div>
+                    </div>
+                    <div class="pret">7,5 €</div>
+                </div>
+                <div class="optiune">
+                    <div class="text">
+                        <div class="titlu">Crevettes Pil Pil</div>
+                        <div class="descriere">Crevettes, pulpe de tomate, ail, piment</div>
+                    </div>
+                    <div class="pret">7,5 €</div>
+                </div>
+                <hr style="width: 100%; background-color: black; height: 2px; margin-left: auto; margin-right: auto;">
+            </div>
+        </div>
+
+        <div class="fel">
+            <div class="undertitle">Soupes</div>
+            <div class="optiuni">
+                <div class="optiune">
+                    <div class="text">
+                        <div class="titlu">Soupe de tripes</div>
+                        <div class="descriere">Tripes, carottes, crème fraîche, ail, jaune d'œuf</div>
+                    </div>
+                    <div class="pret">9,5 €</div>
+                </div>
+                <div class="optiune">
+                    <div class="text">
+                        <div class="titlu">Soupe du jour</div>
+                        <div class="descriere">Recette traditionnelle selon arrivage</div>
+                    </div>
+                    <div class="pret">9,5 €</div>
+                </div>
+                <hr style="width: 100%; background-color: black; height: 2px; margin-left: auto; margin-right: auto;">
+            </div>
+        </div>
+
+        <div class="fel">
+            <div class="undertitle">Plats Chauds</div>
+            <div class="optiuni">
+                <div class="optiune">
+                    <div class="text">
+                        <div class="titlu">Jarret de porc aux haricots</div>
+                        <div class="descriere">Jarret de porc, haricots blancs, sauce tomate</div>
+                    </div>
+                    <div class="pret">19,00 €</div>
+                </div>
+                <div class="optiune">
+                    <div class="text">
+                        <div class="titlu">Sarmale avec polenta</div>
+                        <div class="descriere">Chou, viande hachée, riz, polenta, crème fraîche</div>
+                    </div>
+                    <div class="pret">17,5 €</div>
+                </div>
+                <div class="optiune">
+                    <div class="text">
+                        <div class="titlu">Mici avec frites</div>
+                        <div class="descriere">Viande grillée (bœuf et agneau), frites, pain</div>
+                    </div>
+                    <div class="pret">15,50 €</div>
+                </div>
+                <div class="optiune">
+                    <div class="text">
+                        <div class="titlu">Schnitzel de poulet avec frites</div>
+                        <div class="descriere">Schnitzel de poulet, frites, salade</div>
+                    </div>
+                    <div class="pret">15,50 €</div>
+                </div>
+                <div class="optiune">
+                    <div class="text">
+                        <div class="titlu">Échine de porc grillée avec frites</div>
+                        <div class="descriere">Échine de porc, frites, salade</div>
+                    </div>
+                    <div class="pret">15,50 €</div>
+                </div>
+                <div class="optiune">
+                    <div class="text">
+                        <div class="titlu">Truite frite avec polenta</div>
+                        <div class="descriere">Truite, ail, polenta</div>
+                    </div>
+                    <div class="pret">17,00 €</div>
+                </div>
+                <div class="optiune">
+                    <div class="text">
+                        <div class="titlu">Saumon grillé avec frites</div>
+                        <div class="descriere">Saumon, frites, sauce à l'ail</div>
+                    </div>
+                    <div class="pret">16,90 €</div>
+                </div>
+                <div class="optiune">
+                    <div class="text">
+                        <div class="titlu">Entrecôte de bœuf avec frites</div>
+                        <div class="descriere">Entrecôte, frites, salade</div>
+                    </div>
+                    <div class="pret">27,00 €</div>
+                </div>
+                <div class="optiune">
+                    <div class="text">
+                        <div class="titlu">Pastrami d'agneau</div>
+                        <div class="descriere">Pastrami d'agneau, salade, polenta</div>
+                    </div>
+                    <div class="pret">18,50 €</div>
+                </div>
+                <hr style="width: 100%; background-color: black; height: 2px; margin-left: auto; margin-right: auto;">
+            </div>
+        </div>
+
+        <div class="fel">
+            <div class="undertitle">Salades</div>
+            <div class="optiuni">
+                <div class="optiune">
+                    <div class="text">
+                        <div class="titlu">Salade à la grecque</div>
+                        <div class="descriere">Salade, tomates, concombres, oignons, poivrons, feta</div>
+                    </div>
+                    <div class="pret">12,5 €</div>
+                </div>
+                <div class="optiune">
+                    <div class="text">
+                        <div class="titlu">Salade César</div>
+                        <div class="descriere">Salade, tomates, pui, parmesan, croûtons</div>
+                    </div>
+                    <div class="pret">13,50 €</div>
+                </div>
+                <div class="optiune">
+                    <div class="text">
+                        <div class="titlu">Salade de crudités</div>
+                        <div class="descriere">Salade, tomates, concombres, poivrons, oignons</div>
+                    </div>
+                    <div class="pret">12,00 €</div>
+                </div>
+                <hr style="width: 100%; background-color: black; height: 2px; margin-left: auto; margin-right: auto;">
+            </div>
+        </div>
+
+        <div class="fel">
+            <div class="undertitle">Pâtes</div>
+            <div class="optiuni">
+                <div class="optiune">
+                    <div class="text">
+                        <div class="titlu">Pâtes Carbonara</div>
+                        <div class="descriere">Pâtes, crème fraîche, œuf, parmesan, bacon</div>
+                    </div>
+                    <div class="pret">13,50 €</div>
+                </div>
+                <div class="optiune">
+                    <div class="text">
+                        <div class="titlu">Pâtes à la sauce tomate</div>
+                        <div class="descriere">Pâtes, oignons, sauce tomate</div>
+                    </div>
+                    <div class="pret">13,50 €</div>
+                </div>
+                <div class="optiune">
+                    <div class="text">
+                        <div class="titlu">Pâtes aux fruits de mare</div>
+                        <div class="descriere">Pâtes, fruits de mer, ail, sauce tomate</div>
+                    </div>
+                    <div class="pret">13,00 €</div>
+                </div>
+                <hr style="width: 100%; background-color: black; height: 2px; margin-left: auto; margin-right: auto;">
+            </div>
+        </div>
+
+        <div class="fel">
+            <div class="undertitle">Plateaux</div>
+            <div class="optiuni">
+                <div class="optiune">
+                    <div class="text">
+                        <div class="titlu">Plateau froid</div>
+                        <div class="descriere">Charcuterie, fromages, légumes</div>
+                    </div>
+                    <div class="pret">39,00 €</div>
+                </div>
+                <div class="optiune">
+                    <div class="text">
+                        <div class="titlu">Plateau chaud "La Ioana"</div>
+                        <div class="descriere">Mici, échine de porc, saucisses, blanc de poulet, salade</div>
+                    </div>
+                    <div class="pret">49,00 €</div>
+                </div>
+                <hr style="width: 100%; background-color: black; height: 2px; margin-left: auto; margin-right: auto;">
+            </div>
+        </div>
+
+        <div class="fel">
+            <div class="undertitle">Desserts</div>
+            <div class="optiuni">
+                <div class="optiune">
+                    <div class="text">
+                        <div class="titlu">Lava cake</div>
+                        <div class="descriere">Cœur fondant au chocolat</div>
+                    </div>
+                    <div class="pret">7,00 €</div>
+                </div>
+                <div class="optiune">
+                    <div class="text">
+                        <div class="titlu">Papanași</div>
+                        <div class="descriere">Beignets traditionnels au fromage</div>
+                    </div>
+                    <div class="pret">7,50 €</div>
+                </div>
+                <div class="optiune">
+                    <div class="text">
+                        <div class="titlu">Crêpes</div>
+                        <div class="descriere">Au chocolat ou confiture</div>
+                    </div>
+                    <div class="pret">4,50 €</div>
+                </div>
+                <div class="optiune">
+                    <div class="text">
+                        <div class="titlu">Glace</div>
+                        <div class="descriere">Assortiment de parfums</div>
+                    </div>
+                    <div class="pret">7,00 €</div>
+                </div>
+                <hr style="width: 100%; background-color: black; height: 2px; margin-left: auto; margin-right: auto;">
+            </div>
+        </div>
+
+        <div class="fel">
+            <div class="undertitle">Boissons</div>
+            <div class="optiuni">
+                <div class="optiune">
+                    <div class="text">
+                        <div class="titlu">Cola, jus</div>
+                        <div class="descriere">Boissons rafraîchissantes</div>
+                    </div>
+                    <div class="pret">3,30 €</div>
+                </div>
+                <div class="optiune">
+                    <div class="text">
+                        <div class="titlu">RedBull</div>
+                        <div class="descriere">Boisson énergisante</div>
+                    </div>
+                    <div class="pret">3,50 €</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="end-section">
+        <div class="left">
+            <h2>Restaurant - La Ioana</h2>
+            <p>172 Rue Rateau, 93120 La Courneuve, France</p>
+            <p>Tél: +33753411035</p>
+            <a href="info.html/#contact">CONTACTEZ-NOUS</a>
+            <a href="tel:+33753411035">RÉSERVEZ MAINTENANT</a>
+        </div>
+        <div class="right">
+            <h2>La Ioana</h2>
+        </div>
+    </div>
+
+    <script>
+        function showSideBar() {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = "flex";
+        }
+        function hideSideBar() {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

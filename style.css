@@ -12,6 +12,11 @@
     src: url(fonts/IrishGrover-Regular.ttf);
 }
 
+@font-face {
+    font-family: "Librebaskerville";
+    src: url(fonts/LibreBaskerville-VariableFont_wght.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -331,7 +336,53 @@ nav a:first-child {
     max-width: 100% !important;
 }
 
-@media (max-width: 800px) {
+.optiuni {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.undertitle {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.descriere {
+    font-size: 0.8rem;
+    padding-left: 0.5rem;
+}
+
+.meniu {
+    display: grid;
+    width: 100%;
+    font-family: Librebaskerville;
+}
+
+
+.optiune {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:1rem;
+}
+.optiune > .text {
+    width: 70%;
+    font-size: 1.2rem;
+}
+
+.optiune > .pret {
+    width: 30%;
+    text-align: right;
+}
+
+.fel {
+    display:contents;
+    justify-content: center;
+}
+
+.fel > .undertitle {
+    text-align: center;
+}
+
+@media (max-width: 810px) {
      .hide-me {
         display: none;
         width: 0px;
